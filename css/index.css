@@ -1,0 +1,353 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.9px; 
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navigat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 15%;
+  padding: 20px 50px 10px 120px;
+}
+
+.menulist {
+  width: 60%;
+  padding: 20px 50px 10px 20px;
+}
+.menulist ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+.menulist ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menulist ul li .item {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  padding-top: 15px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* hero */
+
+.hero {
+  width: 100%;
+  height: 70vh;
+  gap: 25px;
+  background-image: url("../images/heroimages/sea-underwater-sun-4k-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  text-shadow: black 2px;
+  
+}
+.btn-size{
+    font-size: small;
+    padding: 13px 40px;
+}
+.hero-readmore{
+    text-decoration: none;
+    color: white;
+    background-color: #745CF8;
+    
+    border: #745CF8 solid 2px;
+    border-radius: 3px;
+    font-weight: 100;
+}
+.hero-readmore:hover{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: black solid 2px;
+    border-radius: 3px;
+    font-weight: 100;
+}
+
+.hero-downloadnow{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: white solid 2px;
+    border-radius: 3px;
+    font-weight: 100;
+}
+.hero-downloadnow:hover{
+    text-decoration: none;
+    color: #745CF8;
+    background-color: transparent;
+    border: #745CF8 solid 2px;
+    border-radius: 3px;
+    font-weight: 100;
+}
+
+
+.section1{
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info{
+    width: 300px;
+}
+
+.info h2{
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.info p{
+    line-height: 1.4em;
+    color: #99afc2;
+    padding: 20px 0px;
+}
+
+.section2{
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.section3{
+    background-image: url("../images/cardsimages/section-3.jpg");
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: black 2px;
+    gap: 30px;
+}
+.section3 p{
+    font-size: medium;
+    width: 1011px;
+    text-align: center;
+    line-height: normal;
+    padding: 5px;
+}
+.section3 h2{
+    font-size: 45px;
+    padding: 5px;
+}
+
+.section4{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: black 2px;
+    gap: 30px;
+    background-color: #F5F5F5;
+}
+
+.section4 p{
+    font-size: medium;
+    width: 1011px;
+    text-align: center;
+    padding: 5px;
+    line-height: normal;
+    color: #AF9FAD;
+}
+
+.section4 h2{
+    font-size: 40px;
+    font-weight: 100;
+    padding: 10px 0px;
+}
+
+.section5{
+    background-color: black;
+}
+.section5 h2{
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+    color: white;
+}
+.section5 p{
+    text-align: center;
+    color: white;
+}
+.section5 .row{
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+.section5 .row .img{
+    height: 40vh;
+}
+.section5 .row .img img{
+    
+    width: 321px;
+    height: 40vh;
+    background-size: contain;
+    
+}
+
+.section6{
+    background-image: url("../images/cardsimages/section6.jfif");
+    background-size: cover;
+    height: 50vh;
+}
+.section6 h2{
+    text-align: center;
+    color: white;
+    padding: 40px 0px 20px 0px;
+}
+.section6 p{
+    text-align: center;
+    color: white;
+    padding: 10px 80px;
+    font-size: small;
+    font-weight: 100;
+}
+.section6 .customer-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.section6 img{
+    border-radius: 400px;
+    height: 80px;
+    margin: 0px 150px;
+}
+.section6 .coloring{
+    color: white;
+}
+
+.section7 {
+    text-align: center;
+    padding: 20px 0px;
+}
+.section7 h2{
+    text-align: center;
+    height: 50px;
+    padding: 20px 0px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section7 .iconjs{
+    font-size: xx-large;
+    color: #F4E497;
+}
+.section7 .iconhtml{
+    font-size: xx-large;
+    color: #F2A591;
+}
+.section7 .iconcss{
+    font-size: xx-large;
+    color: #80B8DD;
+}
+.section7 .iconless{
+    font-size: xx-large;
+    color: #B6ABC6;
+}
+
+.section8{
+    background-color: #F5F5F5;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section8 p{
+    margin-right: 50px;
+}
+
+footer{
+    background-color: black;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p{
+    color: white;
+}
+footer .icons{
+    color: white;
+    gap: 20px;
+}
